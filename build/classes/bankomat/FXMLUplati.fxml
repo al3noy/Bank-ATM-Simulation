@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankomat.FXMLUplatiController">
+   <children>
+      <ImageView fx:id="imgBack" disable="true" fitHeight="454.0" fitWidth="776.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backg.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="txtStanje" layoutX="14.0" layoutY="185.0" stroke="WHITE" strokeType="OUTSIDE" text="Trenutno stanje na banci: " wrappingWidth="297.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDzep" layoutX="14.0" layoutY="242.0" stroke="WHITE" strokeType="OUTSIDE" text="Trenutno stanje kod vas: " wrappingWidth="297.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblBanka" layoutX="269.0" layoutY="152.0" prefHeight="48.0" prefWidth="161.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDzep" layoutX="269.0" layoutY="211.0" prefHeight="48.0" prefWidth="161.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNazad1" layoutX="14.0" layoutY="370.0" mnemonicParsing="false" onAction="#nazad" prefHeight="48.0" prefWidth="133.0" style="-fx-background-color: lightgreen; -fx-border-color: blue; -fx-border-radius: 30; -fx-background-radius: 30;" text="&lt; Nazad" textFill="#0044ff">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEuro" layoutX="520.0" layoutY="60.0" mnemonicParsing="false" onAction="#staviEuro" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: lightgreen; -fx-border-color: gray; -fx-border-radius: 30; -fx-background-radius: 30;" text="€" textFill="#a48e0e">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDollar" layoutX="613.0" layoutY="60.0" mnemonicParsing="false" onAction="#staviDollar" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: lightgreen; -fx-border-color: gray; -fx-background-radius: 30; -fx-border-radius: 30;" text="\$" textFill="#a48e0e">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Button>
+      <Text fx:id="txtStanje1" layoutX="541.0" layoutY="54.0" stroke="WHITE" strokeType="OUTSIDE" text="Izaberi valutu" wrappingWidth="133.0">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txfUplata" layoutX="519.0" layoutY="159.0" prefHeight="34.0" prefWidth="173.0" promptText="Unesite iznos za uplatu">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnUplata" layoutX="554.0" layoutY="206.0" mnemonicParsing="false" onAction="#uplatiNovac" prefHeight="48.0" prefWidth="102.0" style="-fx-background-color: lightgreen; -fx-border-color: gray; -fx-border-radius: 30; -fx-background-radius: 30;" text="Uplati" textFill="#40403f">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

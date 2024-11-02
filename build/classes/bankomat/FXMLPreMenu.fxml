@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankomat.FXMLPreMenuController">
+   <children>
+      <ImageView fx:id="imgBack2" disable="true" fitHeight="454.0" fitWidth="776.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNastavi" layoutX="281.0" layoutY="250.0" mnemonicParsing="false" onAction="#nastavi" prefHeight="49.0" prefWidth="207.0" style="-fx-border-radius: 30; -fx-background-color: #4aed75; -fx-background-radius: 30; -fx-border-color: gray; -fx-cursor: pointer;" text="Nastavi &gt;" textAlignment="CENTER" textFill="#252525">
+         <font>
+            <Font name="Agency FB Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNapusti" layoutX="284.0" layoutY="337.0" mnemonicParsing="false" onAction="#napusti" prefHeight="49.0" prefWidth="207.0" style="-fx-background-color: pink; -fx-border-color: red; -fx-background-radius: 30; -fx-border-radius: 30;" text="Napusti bankomat" textAlignment="CENTER" textFill="#252525">
+         <font>
+            <Font name="Agency FB Bold" size="26.0" />
+         </font>
+      </Button>
+      <Text layoutX="283.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prijavljeni ste kao: ">
+         <font>
+            <Font name="Agency FB Bold" size="33.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblNick" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="164.0" prefHeight="52.0" prefWidth="713.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

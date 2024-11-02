@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankomat.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="imgBack" disable="true" fitHeight="454.0" fitWidth="776.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOtisak" fitHeight="194.0" fitWidth="241.0" layoutX="290.0" layoutY="122.0" onMouseClicked="#otisak" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@otisak_solo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="txtOtisak" fill="RED" layoutX="119.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potvrdite svoj otisak prsta i unesite korisnicko ime">
+         <font>
+            <Font name="Agency FB Bold" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txfNickname" layoutX="294.0" layoutY="346.0" prefHeight="38.0" prefWidth="187.0" promptText="Unesite korisnicko ime">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
